@@ -25,6 +25,8 @@ public class MainActivity extends ActionBarActivity implements OnClickListener {
         aboutButton.setOnClickListener(this);
         View countButton = this.findViewById(R.id.button_count_event);
         countButton.setOnClickListener(this);
+        View listEventButton = this.findViewById(R.id.button_list_event);
+        listEventButton.setOnClickListener(this);
         
 		if (savedInstanceState == null) {
 			getSupportFragmentManager().beginTransaction()
@@ -45,6 +47,10 @@ public class MainActivity extends ActionBarActivity implements OnClickListener {
     			break;
     		case R.id.button_count_event:
     			intent = new Intent(this, CountEventActivity.class);
+    			this.startActivity(intent);
+    			break;
+    		case R.id.button_list_event:
+    			intent = new Intent(this, EventListViewActivity.class);
     			this.startActivity(intent);
     			break;
     	}

@@ -30,6 +30,10 @@
             android:name="com.winterdev.garagebid.CountEventActivity"
             android:label="@string/title_activity_count_event" >
         </activity>
+        <activity
+            android:name="com.winterdev.garagebid.EventListViewActivity"
+            android:label="@string/title_activity_event_listview" >
+        </activity>
         </application>
 
 </manifest>

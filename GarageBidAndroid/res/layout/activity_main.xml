@@ -27,5 +27,11 @@
         android:layout_height="wrap_content"
         android:text="@string/label_button_count_event" />
     
+    <Button
+        android:id="@+id/button_list_event"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label_button_list_event" />
+    
     
 </LinearLayout>
